@@ -7,7 +7,7 @@ export const Greetings = () => (
     <div className="w-5/12 max-[600px]:w-full ">
       <h3 className="text-white mt-36 text-4xl max-[600px]:text-center">Меня зовут Илья</h3>
       <h4 className="text-white mt-12 text-2xl max-[600px]:text-center">Мне 20 лет<p/>Я начинающий frontend разработчик</h4>
-      <button className="text-black mt-12 text-2xl bg-orange-700 rounded-3xl p-3 inline-block max-[600px]:w-full">Связаться со мной</button>
+      <a href="#contacts" className="text-black mt-12 text-2xl border-2 bg-orange-500 rounded-3xl p-3 inline-block max-[600px]:w-full">Связаться со мной</a>
       <div className="mt-12">
           <div className="text-black text-2xl bg-zinc-400 rounded-md p-3 inline-block m-2">HTML/CSS</div>
           <div className="text-black text-2xl bg-cyan-200 rounded-md p-3 inline-block m-2">SCSS/Tailwind</div>
@@ -23,5 +23,3 @@ export const Greetings = () => (
   </div>
   
 );
-{/* <div className="flex my-0 mx-auto flex-col">
-<div className="mt-10 w-full h-96 relative my-0 mx-auto"> */}

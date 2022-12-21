@@ -1,12 +1,11 @@
 import { useState } from "react";
-
+import { About } from "./About";
+import { Expect } from "./Expect";
+import { Plan } from "./Plan";
+import { Way } from "./Way";
 export const Details = () => {
   const [select, setSelect] = useState<number>(0);
   const headers: string[] = ["О себе","Мой путь","Ожидания", "Планы"]; 
-  const text: string[] = ["",
-  'Я 3 года разрабатывал десктопные и игровые приложения на C# + Unity, а так же изучал алгоритмы и стурктуры данных на C++. Полгода назад открыл для себя web-разработку. Все технологии я учил по платным курсам, статьям и документациям.', 
-  "Хотел бы работать React/Vue frontend-разработчиком, либо backend на Node.js/NestJS. Я не против работы с однотипными задачами, но также хотел бы решать сложные, алгоритмические задания для повышения квалификации.", 
-  "Что я учу сейчас: Next, Nest. В ближайшем будущем: Turbopack или Vite, GraphQL, ASP .NET Core, Мобильная разработка на Flutter, Docker + Ansible"]; 
 
   return(
     <>
@@ -24,8 +23,10 @@ export const Details = () => {
             ))}
           </div>
           <div>
-          {text[select]}
-           
+              <About select={select}/>
+              <Way select={select}/>
+              <Expect select={select}/>
+              <Plan select={select}/>
           </div>
       
       </div>

@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      cursor:{
+        "gh": "url('/public/red-cursor.png');"
+      },
       height: {
         '128': '32rem',
       },
