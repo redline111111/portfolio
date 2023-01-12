@@ -24,17 +24,37 @@ export const Way = ({select}:WayItemProps) => {
                 
                 <br />
                 <div className="text-3xl mb-2">
-                    2022, Май — текущее время
+                    2022, Июль — 2022, Октябрь
                 </div>
                 <div>
-                    Начал увлекаться web-разработкой более подробно.
+                    Frontend-разработчик в Университет 2035.
+                    <br/>
+                    В основном фиксил баги и дорабатывал страницы сайтов, изредка работал с Tilda. Также доводилось разрабатывать новый функционал.
+                    Самые интересные задачи были:
+                    <li> Работа с интерактивными картами</li>
+                    <li> Алгоритмы поиска </li>
+                    <li> Небольшой опыт с CDN и Google Analytics </li>
                     <br />
-                    Первым делом изучил <span className="text-yellow-200">JavaScript</span>, <span className="text-blue-400">React</span> и <span className="text-violet-400">Redux</span> по платным курсам. Мне было мало поверхностной информации по <span className="text-yellow-200">JS</span>, поэтому прочитал книгу "JavaScript. Подробное руководство", Д. Флэнган.
-                    <br />
-                    Следующим этапом для меня стала разработка серверной части приложения. Я стал изучать <span className="text-green-500">Node.js + Express + MongoDB</span> по платным курсам, но в основном пользовался документациями
-                    <br />
-                    После всего, я решил отточить навыки верстки на <span className="text-cyan-200">SCSS/Tailwind</span> и изучить <span className="text-indigo-500">TypeScript</span>.
                 </div>
+                <div className="text-3xl mb-2">
+                    2022, Октябрь — 2022, Декабрь
+                </div>
+                <div>
+                    Fullstack-разработчик в стартап проекте.
+                    <br />
+                    Работал вместе с командой над стартапом, который довели с идеи до MVP и первых инвестиций. В одиночку разрабатывал прототип веб-приложения. В мои обязанности входило:
+                    <li> Верстка макета по дизайну на <span className="text-blue-400">React</span> </li>
+                    <li> Добавление и обновление функционала </li>
+                    <li> Создание backend-архитектуры, с легкой масштабируемостью на <span className="text-green-500">Node.js + Express + MongoDB</span></li>
+                    <li> Участие в планировании бизнес-модели и стратегии развития </li>
+                </div>
+                {/* <span className="text-yellow-200">JavaScript</span>, 
+                    <span className="text-blue-400">React</span> 
+                    <span className="text-violet-400">Redux</span>
+                    <span className="text-green-500">Node.js + Express + MongoDB</span>
+                    <span className="text-cyan-200">SCSS/Tailwind</span>
+                    <span className="text-indigo-500">TypeScript</span>.
+                </div> */}
         </>
     )
 };

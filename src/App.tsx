@@ -6,7 +6,7 @@ import { Projects } from "./components/Projects";
 
 function App() {
   return (
-    <div className="flex w-screen bg-neutral-900 h-full flex-col">
+    <div className="flex bg-neutral-900 h-full flex-col">
       <Greetings/>
       <Projects/>
       <Details/>
