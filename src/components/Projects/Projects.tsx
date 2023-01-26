@@ -191,8 +191,7 @@ export const Projects = () => (
                 RedTop
               </h3>
               <div className="mt-3">
-                Проект создавался с целью помочь игрокам в 
-                компьютерной онлайн игре Dead by Daylight. 
+                Удобный агрегатор лучших онлайн-курсов. Сайт разработан производительным, SEO-friendly, с использованием (SSR) и SSG.
               </div>
               <div className="mt-10 mb-3 flex
               h-30 flex-wrap bottom-0 absolute gap-3 justify-start max-[1200px]:relative">
