@@ -15,6 +15,7 @@ export const Greetings = () => (
           <div className="text-black text-2xl bg-indigo-500 rounded-md p-3 inline-block m-2">TypeScript</div>
           <div className="text-black text-2xl bg-blue-400 rounded-md p-3 inline-block m-2">React</div>
           <div className="text-black text-2xl bg-violet-400 rounded-md p-3 inline-block m-2">Redux/Redux Toolkit</div>
+          <div className="text-black text-2xl bg-sky-600 rounded-md p-3 inline-block m-2">Next.js</div>
           <div className="text-black text-2xl bg-green-500 rounded-md p-3 inline-block m-2">Node.js/Express</div>
           <div className="text-black text-2xl bg-amber-600 rounded-md p-3 inline-block m-2">Git</div>
           <div className="text-black text-2xl bg-indigo-300 rounded-md p-3 inline-block m-2">Webpack</div>
