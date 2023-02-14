@@ -1,3 +1,6 @@
+import { Tag } from "components/Tag/Tag";
+import { skills } from "components/Tag/Tag.interface";
+
 export const Projects = () => (
     <>
       <h2 className="text-white mt-36 text-5xl text-center mb-16 ">Мои проекты</h2>
@@ -195,14 +198,39 @@ export const Projects = () => (
               </div>
               <div className="mt-10 mb-3 flex
               h-30 flex-wrap bottom-0 absolute gap-3 justify-start max-[1200px]:relative">
-                <div className="shadow-button text-black text-1xl bg-zinc-400 rounded-md p-3 h-12">HTML/CSS</div>
-                <div className="shadow-button text-black text-1xl bg-indigo-500 rounded-md p-3 h-12">TypeScript</div>
-                <div className="shadow-button text-black text-1xl bg-sky-600 rounded-md p-3 h-12">Next.js</div>
-                <div className="shadow-button text-black text-1xl bg-violet-400 rounded-md p-3 h-12">Redux/Redux Toolkit</div>
+                <Tag skill={skills.html} type = 'card'/>
+                <Tag skill={skills.ts} type = 'card'/>
+                <Tag skill={skills.next} type = 'card'/>
+                <Tag skill={skills.redux} type = 'card'/>
               </div>
             </div>
         </div>
-
+        <div className="w-full bg-white h-80 rounded-2xl border-amber-300 border-2 flex max-[1200px]:w-full max-[1200px]:h-auto max-[1200px]:flex-col">
+            <div className="w-1/3 rounded-l-2xl overflow-hidden relative max-[1200px]:w-full max-[1200px]:h-52 max-[1200px]:rounded-2xl" >
+              <a href="https://github.com/redline111111/realworld-server">
+                <img src="gh-icon.png" alt="" className="cursor-pointer absolute z-10 left-3/4 w-3/12 mt-1 mr-1"/>
+              </a>
+              <a href="https://github.com/redline111111/realworld-server">
+                <div className="z-0 w-full rounded-l-2xl h-full bg-no-repeat bg-center cursor-pointer duration-300 hover:scale-125" style={{backgroundImage: `url("realworld.jpg")`, backgroundSize: "cover"}}></div>
+              </a>
+            </div>
+            <div className="w-2/3 rounded-r-2xl p-4 relative max-[1200px]:w-full">
+              <h3 className="font-semibold text-xl text-center">
+                Realworld (server)
+              </h3>
+              <div className="mt-3">
+                Backend, написанный как тренировочный проект  
+                <a href='https://github.com/gothinkster/realworld' className="text-blue-500"> RealWorld</a>.
+              </div>
+              <div className="mt-10 mb-3 flex
+              h-30 flex-wrap bottom-0 absolute gap-3 justify-start max-[1200px]:relative">
+                <Tag skill={skills.ts} type = 'card'/>
+                <Tag skill={skills.nest} type = 'card'/>
+                <Tag skill={skills.typeorm} type = 'card'/>
+              </div>
+            </div>
+        </div>
+        
         <div className="w-full bg-white h-80 rounded-2xl border-amber-300 border-2 flex max-[1200px]:w-full max-[1200px]:h-auto max-[1200px]:flex-col">
             <div className="w-1/3 rounded-l-2xl overflow-hidden relative max-[1200px]:w-full max-[1200px]:h-52 max-[1200px]:rounded-2xl" >
               <a href="https://github.com/redline111111/dbd-helper-site ">
@@ -218,15 +246,16 @@ export const Projects = () => (
               </h3>
               <div className="mt-3">
                 Проект создавался с целью помочь игрокам в 
-                компьютерной онлайн игре Dead by Daylight. 
+                компьютерной онлайн игре Dead by Daylight. Сайт реализует удобное создание сборок для персонажей игры.  
               </div>
               <div className="mt-10 mb-3 flex
               h-30 flex-wrap bottom-0 absolute gap-3 justify-start max-[1200px]:relative">
-                <div className="shadow-button text-black text-1xl bg-zinc-400 rounded-md p-3 h-12">HTML/CSS</div>
-                <div className="shadow-button text-black text-1xl bg-yellow-200 rounded-md p-3 h-12">JavaScript</div>
-                <div className="shadow-button text-black text-1xl bg-blue-400 rounded-md p-3 h-12">React</div>
-                <div className="shadow-button text-black text-1xl bg-violet-400 rounded-md p-3 h-12">Redux/Redux Toolkit</div>
-                <div className="shadow-button text-black text-1xl bg-green-500 rounded-md p-3 h-12">Node.js/Express</div></div>
+                <Tag skill={skills.html} type = 'card'/>
+                <Tag skill={skills.js} type = 'card'/>
+                <Tag skill={skills.react} type = 'card'/>
+                <Tag skill={skills.redux} type = 'card'/>
+                <Tag skill={skills.node} type = 'card'/>
+              </div>
             </div>
         </div>
 
@@ -251,11 +280,12 @@ export const Projects = () => (
             </div>
             <div className="mt-10 mb-3 flex
             h-30 flex-wrap bottom-0 absolute gap-3 justify-start max-[1200px]:relative">
-              <div className="shadow-button text-black text-1xl bg-zinc-400 rounded-md p-3 h-12">HTML/CSS</div>
-              <div className="shadow-button text-black text-1xl bg-yellow-200 rounded-md p-3 h-12">JavaScript</div>
-              <div className="shadow-button text-black text-1xl bg-blue-400 rounded-md p-3 h-12">React</div>
-              <div className="shadow-button text-black text-1xl bg-violet-400 rounded-md p-3 h-12">Redux/Redux Toolkit</div>
-              <div className="shadow-button text-black text-1xl bg-green-500 rounded-md p-3 h-12">Node.js/Express</div></div>
+                <Tag skill={skills.html} type = 'card'/>
+                <Tag skill={skills.js} type = 'card'/>
+                <Tag skill={skills.react} type = 'card'/>
+                <Tag skill={skills.redux} type = 'card'/>
+                <Tag skill={skills.node} type = 'card'/>
+            </div>
           </div>
         </div>
 
@@ -278,11 +308,11 @@ export const Projects = () => (
               </div>
               <div className="mt-10 mb-3 flex
               h-30 flex-wrap bottom-0 absolute gap-3 justify-start max-[1200px]:relative">
-                <div className="shadow-button text-black text-1xl bg-zinc-400 rounded-md p-3 h-12">HTML/CSS</div>
-                <div className="shadow-button text-black text-1xl bg-indigo-500 rounded-md p-3 h-12">TypeScript</div>
-                <div className="shadow-button text-black text-1xl bg-blue-400 rounded-md p-3 h-12">React</div>
-                <div className="shadow-button text-black text-1xl bg-violet-400 rounded-md p-3 h-12">Redux/Redux Toolkit</div>
-                <div className="shadow-button text-black text-1xl bg-green-500 rounded-md p-3 h-12">Node.js/Express</div></div>
+                <Tag skill={skills.html} type = 'card'/>
+                <Tag skill={skills.js} type = 'card'/>
+                <Tag skill={skills.react} type = 'card'/>
+                <Tag skill={skills.redux} type = 'card'/>
+              </div>
             </div>
         </div>
 
@@ -304,10 +334,10 @@ export const Projects = () => (
               SPA-приложение, которое выводит категории и рецепты блюд
             </div>
             <div className="mt-10 mb-3 flex h-30 flex-wrap bottom-0 absolute gap-3 justify-start max-[1200px]:relative">
-              <div className="shadow-button text-black text-1xl bg-zinc-400 rounded-md p-3 h-12">HTML/CSS</div>
-              <div className="shadow-button text-black text-1xl bg-yellow-200 rounded-md p-3 h-12">JavaScript</div>
-              <div className="shadow-button text-black text-1xl bg-blue-400 rounded-md p-3 h-12">React</div>
-              <div className="shadow-button text-black text-1xl bg-violet-400 rounded-md p-3 h-12">Redux/Redux Toolkit</div>
+                <Tag skill={skills.html} type = 'card'/>
+                <Tag skill={skills.js} type = 'card'/>
+                <Tag skill={skills.react} type = 'card'/>
+                <Tag skill={skills.redux} type = 'card'/>
             </div>
           </div>
         </div>
@@ -330,9 +360,9 @@ export const Projects = () => (
                 Релизует поиск по фильмам
               </div>
               <div className="mt-10 mb-3 flex h-30 flex-wrap bottom-0 absolute gap-3 justify-start max-[1200px]:relative">
-                  <div className="shadow-button text-black text-1xl bg-zinc-400 rounded-md p-3 h-12">HTML/CSS</div>
-                  <div className="shadow-button text-black text-1xl bg-yellow-200 rounded-md p-3 h-12">JavaScript</div>
-                  <div className="shadow-button text-black text-1xl bg-blue-400 rounded-md p-3 h-12">React</div>
+                <Tag skill={skills.html} type = 'card'/>
+                <Tag skill={skills.js} type = 'card'/>
+                <Tag skill={skills.react} type = 'card'/>
               </div>
             </div>
           </div>
@@ -356,9 +386,9 @@ export const Projects = () => (
                 Маленький проект, выводящий товары интернет-магазина с корзиной
               </div>
               <div className="mt-10 mb-3 flex h-30 flex-wrap bottom-0 absolute gap-3 justify-start max-[1200px]:relative">
-                  <div className="shadow-button text-black text-1xl bg-zinc-400 rounded-md p-3 h-12">HTML/CSS</div>
-                  <div className="shadow-button text-black text-1xl bg-yellow-200 rounded-md p-3 h-12">JavaScript</div>
-                  <div className="shadow-button text-black text-1xl bg-blue-400 rounded-md p-3 h-12">React</div>
+                <Tag skill={skills.html} type = 'card'/>
+                <Tag skill={skills.js} type = 'card'/>
+                <Tag skill={skills.react} type = 'card'/>
                 </div>
             </div>
           </div>
